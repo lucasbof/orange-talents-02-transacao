@@ -1,12 +1,11 @@
 package br.com.zup.cardTransaction.transaction.kafka;
 
-import br.com.zup.cardTransaction.transaction.Transaction;
-import br.com.zup.cardTransaction.transaction.kafka.CardEvent;
-import br.com.zup.cardTransaction.transaction.kafka.EstablishmentEvent;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import br.com.zup.cardTransaction.transaction.Transaction;
 
 public class TransactionEvent {
 

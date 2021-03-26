@@ -24,6 +24,6 @@ public class TransactionListener {
         Transaction transaction = transactionEvent.toModel();
         entityManager.merge(transaction);
 
-        logger.info("Cartão de ID " + transaction.getId()  + " foi criado");
+        logger.info("Mensagem lida!");
     }
 }

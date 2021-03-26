@@ -11,6 +11,8 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String transactionNumber;
+    
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private LocalDateTime createdAt;
 
     @ManyToOne(cascade = CascadeType.MERGE)
